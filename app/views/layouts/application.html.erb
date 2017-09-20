@@ -10,5 +10,11 @@
 
 <%= yield %>
 
+<div>
+  <%= link_to_unless_current 'home', '/static_pages/home' %> | 
+  <%= link_to_unless_current 'about', '/static_pages/about' %> | 
+  <%= link_to_unless_current 'help', '/static_pages/help' %>  | 
+  <%= link_to_unless_current '個人情報保護方針', '/static_pages/privacy_policy' %>
+</div>
 </body>
 </html>
